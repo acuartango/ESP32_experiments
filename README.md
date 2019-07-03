@@ -35,7 +35,7 @@ pip install adafruit-ampy
 
 
 # List files
-# ampy --port /dev/ttyUSB0 ls
+sudo ampy --port /dev/ttyUSB0 ls
 boot.py
 
 # We download the code of this library in our linux:
@@ -43,14 +43,12 @@ git clone https://github.com/20after4/micropython-esp32-wrover-lcd.git
 
 
 # copy all needed files from linux to ESP32:
-# ampy --port /dev/ttyUSB0 put ili9341.py
+sudo ampy --port /dev/ttyUSB0 put ili9341.py
 
 # If we need to delete ESP32's  files from linux:
-# ampy --port /dev/ttyUSB0 rm test.py
+sudo ampy --port /dev/ttyUSB0 rm test.py
 
-
-
-# Connect that ESP32's Pins to Screen:
+# Connect that ESP32's Pins to LCD Screen (all names are written in the chips!):
 
 SDO(MISO)		-	G12
 LED			    -	3.3V  (backlight if we want to switch on&off we can connect to other Pin and switch on or off...)
@@ -62,7 +60,7 @@ CS			    -	G15
 GND			    -	GND
 VCC 			  -	5v
 
-# Write this at ESP32's micropython shell:
+# Write this at ESP32's micropython shell
 
 import ili9341
 from machine import Pin, SPI
