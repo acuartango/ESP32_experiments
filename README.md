@@ -63,16 +63,23 @@ VCC 			  -	5v
 # Write this at ESP32's micropython shell
 
 import ili9341
+
 from machine import Pin, SPI
+
 --spi = SPI(mosi=Pin(13), sck=Pin(14))
+
 spi = SPI(mosi=Pin(13), miso=Pin(12),sck=Pin(14))
+
 display = ili9341.ILI9341(spi, cs=Pin(15), dc=Pin(5), rst=Pin(16))
 
 # Fill the screen in black
+
 display.fill(0)
 
 # Write a pixel
+
 display.pixel(120, 160, 0)
+
 
 
 enjoy!
