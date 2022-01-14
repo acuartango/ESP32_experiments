@@ -33,4 +33,6 @@ sensor = ahtx0.AHT10(i2c)
 while True:
     print("\nTemperature: %0.2f C" % sensor.temperature)
     print("Humidity: %0.2f %%" % sensor.relative_humidity)
+    Pin(2, Pin.OUT).on()
     utime.sleep(5)
+    Pin(2, Pin.OUT).off()
