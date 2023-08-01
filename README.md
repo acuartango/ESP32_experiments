@@ -93,6 +93,7 @@ display.fill(0)
 display.pixel(120, 160, 0)
 ```
 
+
 ## Ejemplo de ESP32-CAM para montar una web en el esp32 que saque y muestre una foto
 
 Pasos 
