@@ -102,6 +102,7 @@ Pasos
     - micropython_camera_feeeb5ea3_esp32_idf4_4.bin
     - 
 - Copia este programa en el raíz del ESP32-CAM como "main.py" para que se ejecute
+  - El código: https://github.com/acuartango/ESP32_experiments/blob/master/servidorWebMostrarFoto.py
   - sudo bin/ampy --port /dev/ttyUSB0 put servidorWebMostrarFoto2.py main.py
 - Conecta al ESP32 para ver algunos logs
   - sudo screen /dev/ttyUSB0 115200
@@ -109,4 +110,3 @@ Pasos
 
 
 
-enjoy!
