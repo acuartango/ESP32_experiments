@@ -93,6 +93,19 @@ display.fill(0)
 display.pixel(120, 160, 0)
 ```
 
+## Ejemplo de ESP32-CAM para montar una web en el esp32 que saque y muestre una foto
+
+Pasos 
+- Carga en el ESP32-CAM el firmare de @lemariva
+  - https://github.com/lemariva/micropython-camera-driver/tree/master/firmware
+    - micropython_camera_feeeb5ea3_esp32_idf4_4.bin
+    - 
+- Copia este programa en el raíz del ESP32-CAM como "main.py" para que se ejecute
+  - sudo bin/ampy --port /dev/ttyUSB0 put servidorWebMostrarFoto2.py main.py
+- Conecta al ESP32 para ver algunos logs
+  - sudo screen /dev/ttyUSB0 115200
+ 
+
 
 
 enjoy!
